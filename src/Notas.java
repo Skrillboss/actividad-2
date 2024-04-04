@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * La clase Notas permite ingresar, calcular y mostrar las notas de un estudiante.
+ * Con este comentario pretendo generar un nuevo commit
  * @version 1.0
  * @since 2024-03-29
  * @author Luis Heredia Colmenares
@@ -68,6 +69,7 @@ public class Notas {
 
     /**
      * Método para mostrar las notas introducidas y su acumulado.
+     * Con esto creo un commit mas para la demstración en github
      */
     public void mostrar() {
         System.out.println("Notas introducidas son:");
