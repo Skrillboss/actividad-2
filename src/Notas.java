@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Notas {
     // Declaramos las variables que nos hacen falta
     double uf1, uf2, uf3;
-    double acu1, acu2, acu3, def;
+    double acu, acu1, acu2, def;
     // Utilizamos Scanner para poder introducir datos
     Scanner entrada = new Scanner(System.in);
 
@@ -58,11 +58,11 @@ public class Notas {
      * @return La nota definitiva del estudiante.
      */
     public double calcularNotas() {
-        acu1 = uf1 * 0.35;
-        acu2 = uf2 * 0.35;
-        acu3 = uf3 * 0.30;
+        acu = uf1 * 0.35;
+        acu1 = uf2 * 0.35;
+        acu2 = uf3 * 0.30;
 
-        def = acu1 + acu2 + acu3;
+        def = acu + acu1 + acu2;
         return def;
     }
 
@@ -75,9 +75,9 @@ public class Notas {
         System.out.println("Nota 2 = " + uf2);
         System.out.println("Nota 3 = " + uf3);
 
-        System.out.println("Acumulado 1 = " + acu1);
-        System.out.println("Acumulado 2 = " + acu2);
-        System.out.println("Acumulado 3 = " + acu3);
+        System.out.println("Acumulado 1 = " + acu);
+        System.out.println("Acumulado 2 = " + acu1);
+        System.out.println("Acumulado 3 = " + acu2);
 
         System.out.println("Nota definitiva = " + def);
     }
